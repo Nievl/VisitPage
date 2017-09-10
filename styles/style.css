@@ -1,0 +1,36 @@
+html	{ 
+	font-size: 10px;
+	background-color: #D3D3D3;
+	font-family: 'Open Sans', sans-serif;
+
+}
+p,a {
+	font-size: 20px;
+	width: 1300px;
+	text-align: left;
+}
+li {
+	font-size: 15px;
+	width: 1300px;
+	line-height: 2;
+	letter-spacing: 2;
+
+}
+h1 {
+	color: blue;
+	font-size: 30px;
+	width: 1400px;
+	text-align: center;
+	/*margin: 0;*/
+	padding: 20px 0;
+	color: #0539F;
+	/*text-shadow: 3px 3px 1px black;*/
+}
+body {
+	width: 1400px;
+	/*display: block;*/
+	/*margin: 0 auto;*/
+	background-color: #F5F5F5;
+	padding: 0 0 20px 20px;
+	border: 5px solid black;
+}
