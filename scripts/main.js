@@ -11,7 +11,7 @@ if (!localStorage.getItem('name')) {
 	setUserName();
 } else {
 	var storedName = localStorage.getItem('name');
-	myHeading.innerHTML = myHeading.innerHTML + storedName;
+	myHeading.innerHTML = 'Добро пожаловать на мою тестовую страничку '  + storedName;
 }
 myButton.onclick = function() {
 	setUserName();
