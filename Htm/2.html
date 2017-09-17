@@ -17,7 +17,7 @@ var step = document.body.offsetHeight / 20;
 
 // creating ship
 var ship = create('🚀');
-ship.style.fontSize = '50px';
+ship.style.fontSize = '30px';
 function  create (str){
 	var elem = document.createElement('div');
 	document.body.appendChild(elem);
@@ -33,28 +33,37 @@ function moveY(y){
 	ship.style.top = y + 'px';
 }
 window.onkeydown =  e => e.keyCode===32 && (dy -= 20);
-setInterval( () => { 
+var timerId = setInterval( () => { 
 	moveY(y); 
 	dy += 1;
 	y= y + dy;
 	y<=0 && (y=0, dy=0);
 	y > (document.body.offsetHeight - 60) && (y = (document.body.offsetHeight - 60), dy=0);
 	moveObstacles (x -= 0.1);
-	//if (x === 0 && ) {prompt('Crash. Enter your name')} //crash incident
+	var y1 = obstacles[-Math.ceil(x)] * step;
+	var y2 = obstacles[-Math.ceil(x - 1)] * step;
+	if (((y+20) >= y1) && (y <= (y1+20)) || ((y+20) >= y2) && (y <= (y2+20))  ) { //crash incident
+	clearInterval(timerId);
+	var explosion = create('💥');
+	explosion.style.top = y-20 + 'px';
+	explosion.style.fontSize = '100px';
+	ship.style.display = 'none';
+	var name = prompt('Crash. Enter your name');
+	alert( name + ', your score =' + (-Math.ceil(x)));
+	} 
 }, 100 );
 
 //create Obstacles
 var x = 0;
 var obstacles = createObstacles();
-var obstacleViews = obstacles.map ( (y,x) => {
+var obstacleViews = obstacles.map ( (z,x) => {
 	var obstacle = create('💣');
 	obstacle.initX = x ;
-	obstacle.style.top = step * y + 'px';
-	obstacle.style.height = step  + 'px';
-	obstacle.style.width = step + 'px';
+	obstacle.style.top = step * z + 'px';
+	obstacle.style.height = 40  + 'px';
+	obstacle.style.width = 40 + 'px';
 	obstacle.style.color = 'red';
 	obstacle.style.fontSize = '30px';
-	
 	return obstacle;
 } )
 function createObstacles() {
