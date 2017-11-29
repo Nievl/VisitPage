@@ -5,9 +5,11 @@ html	{
 
 }
 p,a {
+	font-family: "Oxygen","Oxygen","Segoe UI","Helvetica Neue",sans-serif;
 	font-size: 20px;
 	width: 1300px;
 	text-align: left;
+	color: teal;
 }
 li {
 	font-size: 15px;
@@ -17,7 +19,7 @@ li {
 
 }
 h1 {
-	color: blue;
+	color: maroon;
 	font-size: 30px;
 	width: 1400px;
 	text-align: center;
