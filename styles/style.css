@@ -1,0 +1,42 @@
+html	{ 
+	font-size: 10px;
+	background-color: #D3D3D3;
+	font-family: 'Open Sans', sans-serif;
+
+}
+p,a {
+	font-family: "Oxygen","Oxygen","Segoe UI","Helvetica Neue",sans-serif;
+	font-size: 20px;
+	width: 1300px;
+	text-align: left;
+	color: teal;
+}
+li {
+	font-size: 15px;
+	width: 1300px;
+	line-height: 2;
+	letter-spacing: 2;
+
+}
+h1 {
+		font-size: 30px;
+	width: auto;
+	text-align: center;
+	padding: 20px 0;
+	color: #0539F;
+}
+body {
+	width: auto;
+	background-color: #F5F5F5;
+	padding: 20px 20px 30px 20px;
+	border: 3px solid black;
+	border-radius: 20px;
+}
+button{
+	position: relative;
+	left: 0%;
+	font-size: 15px;
+	margin: 10px;
+	border-radius: 6px;
+	background-image: linear-gradient(to bottom, #fff, #ddd);
+}
