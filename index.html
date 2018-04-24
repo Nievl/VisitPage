@@ -1,23 +1,21 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title> My test page </title>
-	<link rel="stylesheet" type="text/css" href="styles/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" rel="stylesheet">
+<html lang="en">
 
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no initial-scale=1.0 maximum-scale=1.0 minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> Visit Page </title>
+	<link rel="stylesheet" href="./app.css">
 </head>
+
 <body>
-	<h1>  Добро пожаловать на мою тестовую страничку </h1>
-	<p> На данный момент я нахожусь в поиске вакансии на full-stack разработчика, JavaScript, NodeJS.<br>
-		Английским языком владею на уровне Intermediate.</p>
-	<ul>
-		<li>Написал игру по типу Flappy bird на Javascript <a href="Htm/2.html"> Ship </a> (управлять кораблем можно нажимая на пробел) </li>
-		<li>Ссылка на мой профиль на сайте <a href="https://www.codewars.com/users/Loki86/"> Codewars </a></li>
-		<li>Ссылка на моё резюме на сайте Headhunter<a href="https://spb.hh.ru/applicant/resumes/view?resume=76ef9648ff040b6c1b0039ed1f75486a6f3542"> Евгений </a></li>
-		<li>Проект сервера для загрузки и отображения фотографий находится в стадии разработки, прогресс можно посмотреть тут <a href="https://github.com/loki86/PhotoServer"> Photoserver</a> </li>
-	</ul>
-	<button class="button"> change user</button>
-	<script src="scripts/main.js"></script>
-	</body>
+	<h1> Добро пожаловать на мою тестовую страничку </h1>
+	<p> На данный момент я нахожусь в поиске вакансии на full-stack разработчика, JavaScript, NodeJS.
+		<br> Английским языком владею на уровне Intermediate.</p>
+	<div id="root"> Подождите идет загрузка..... </div>
+	<p>Для генерации данной страницы были применены ReactJS, Webpack, Babel</p>
+</body>
+<script src="./dist/bundle.js"></script>
+
 </html>
