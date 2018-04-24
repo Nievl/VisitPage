@@ -840,7 +840,7 @@ exports.default = [{
   date: "Tue Oct 20 2017 19:18:56",
   title: "Flappy bird",
   text: "Написал игру по типу Flappy bird на Javascript (управлять кораблем можно нажимая на пробел)",
-  link: "./htm/game.html"
+  link: "./Htm/game.html"
 }, {
   id: "b96946da-d561-4092-a43e-0a0fd7060bd2",
   date: "Tue Sep 13 2013 08:22:39",
