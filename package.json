@@ -1,0 +1,26 @@
+{
+  "name": "visit_page",
+  "version": "1.0.0",
+  "description": "This my visit page. It was written on ReactJs.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server.js",
+    "webpack": "webpack"
+  },
+  "author": "Levin",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "express": "^4.16.3",
+    "webpack": "^2.7.0",
+    "webpack-cli": "^2.0.15"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  }
+}
