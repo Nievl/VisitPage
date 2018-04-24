@@ -5,7 +5,7 @@ export default [
       title: "Flappy bird",
       text:
         "Написал игру по типу Flappy bird на Javascript (управлять кораблем можно нажимая на пробел)",
-      link: "./htm/game.html"
+      link: "./Htm/game.html"
     },
     {
       id: "b96946da-d561-4092-a43e-0a0fd7060bd2",
